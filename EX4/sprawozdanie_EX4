@@ -1,0 +1,31 @@
+Aleksander Łyskawa 275462
+
+EX4
+
+Wnioski do zadań: 
+
+Filtr Gaussa skutecznie redukuje szum, ale przy większych promieniach powoduje utratę szczegółów. 
+
+Filtr medianowy skutecznie usuwa szum impulsowy i zachowuje krawędzie. Przy dużych promieniach może powodować utratę detali obrazu.
+
+Filtry górnoprzepustowe podkreślają krawędzie i szczegóły, ale wzmacniają także szumy. 
+
+Zadania otwarte:
+
+1. 
+Suma wszystkich elementów macierzy konwolucji powinna być równa 1 w przypadku filtrów dolnoprzepustowych używanych do wygładzania obrazu. W przypadku filtrów górnoprzepustowych suma może być równa 0, co pozwala na wzmocnienie krawędzi.
+
+2. 
+Filtr Gaussa lepiej usuwa szum Gaussowski 
+Filtr medianowy jest lepszy przy usuwaniu szumu impulsowego
+
+3. 
+Filtracja dolnoprzepustowa usuwa detale o wysokiej częstotliwości np. sdetale i krawędzie oraz uwypukla obszary jednolite o niskiej częstotliwości
+
+Filtracja górnoprzepustowa wzmacnia krawędzie i detale o wysokiej czestotliowsci, ale usuwa obszary jednolite o niskiej częstotliwości
+
+4. 
+Różnica polega na tym, że  filtr górnoprzepustowy oznaczony indeksem x jest czuły na zmiany intensywności w poziomie, natomiast filtr oznaczony indeksem y reaguje na zmiany w pionie.
+
+5.
+Problem wynika z asymetryczności filtru, który działa w określonym kierunku. Na przykład filtr Sobel-x wykrywa różnice intensywności od lewej do prawej, pomijając przeciwny kierunek. Aby temu zaradzić, należy zastosować filtry w obu kierunkach, a następnie połączyć wyniki. 
