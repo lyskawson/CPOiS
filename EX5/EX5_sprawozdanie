@@ -1,0 +1,40 @@
+Aleksander Łyskawa 275462 
+
+EX5
+
+Wnioski do zadań:
+
+1. 
+Filtracja dolnoprzepustowa przed progowaniem poprawia wyniki na zaszumionych obrazach, redukując szumy i ułatwiając wybór odpowiedniego progu.
+
+2.
+Detektor Canny daje lepsze wyniki niż Sobel, a ilosc wykrytych krawędzi zależy od dobranych parametrów bloczka.
+
+3.
+Progowanie argumentu gradientu Sobela pozwala na wykrywanie krawędzi w określonym kącie. Funkcja atan2 ułatwia selekcję krawędzi w danym kierunku.
+
+Zadania otwarte: 
+
+1.
+Zaszumienie obrazu pogarsza jakosc segmentacji, poniewaz wprowadza dodatkowe piksele, które moga zostac blednie przypisane do roznych segmentów, utrudniajac oddzielenie obiektów od tła.
+
+2.
+Na obrazie zaszumionym filtr dolnoprzepustowy wygładza obraz i redukuje szum, co poprawia segmentacje. Na obrazie oryginalnym może on jednak znieksztalcic szczegóły, powodując utrate niektórych struktur.
+
+3.
+Dithering to technika rozpraszania intensywnosci pikseli, uzywana w celu uzyskania efektów wizualnych przy ograniczonej liczbie kolorów. Moze poprawic segmentacje w obrazach o niskiej rozdzielczosci kolorów.
+
+4. 
+Rożnica wynika z różnej metody detekcji krawędzi, ponieważ Canny stosuje tłumienie niemaksymalne i podwójne progowanie, co prowadzi do cieńszych i bardziej precyzyjnych linii, podczas gdy Sobel powoduje szersze linie krawędzi.
+
+5.
+Norma euklidesowa jest bardziej wrazliwa na duze roznice w intensywnosci, podczas gdy norma taksówkowa jest mniej wrazliwa, co moze prowadzic do mniej wyraznych krawedzi.
+
+6.
+Tak, gradient obrazu moze miec ujemne wartosci, gdy zmiana intensywnosci pikseli w jednym kierunku jest ujemna, co oznacza spadek intensywnosci.
+
+7.
+Wykrywanie krawedzi pod zadanym katem jest przydatne w analizie tekstur i ksztaltów, np. w rozpoznawaniu znaków lub w detekcji krawedzi obiektów.
+
+8. 
+Progowanie wzgledne jest uzywane w sytuacjach, gdy nie znamy dokladnych wartosci progów, ale potrzebujemy porównac intensywnosci w kontekscie calego obrazu. W praktyce może być to użyteczne w wykrywaniu obiektów w zmiennych warunkach oswietleniowych.
